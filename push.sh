@@ -18,7 +18,7 @@ echo "Enter commit message:"
 read -e commitmsg
 
 git add .
-ehco "Files to be commited:"
+echo "Files to be commited:"
 git ls-files --others --modified --deleted --exclude-standard
 git commit -m "$commitmsg"
 
